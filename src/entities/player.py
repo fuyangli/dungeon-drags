@@ -9,7 +9,7 @@ from src.particles import Dust
 class Player(Entity):
     name = 'player'
     speed = 360
-    max_hp = 100
+    max_hp = 150
     gold = 0
     shield = 1
     strength = 1

@@ -65,6 +65,9 @@ class Merchant(Entity):
             self.animation_frame = 0
         self.image = self.images[int(self.animation_frame)]
 
+    def can_get_hurt_from_weapon(self):
+        return False
+
     def update(self):
         self.update_animation_frame()
         self.detect_collision()

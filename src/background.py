@@ -37,7 +37,7 @@ class BackgroundEffects:
     def add_circle(self):
         radius = random.randint(4, 25)
         color = random.choice(self.colors)
-        x, y = random.randint(-25, utils.world_size[0] / 4 + 25), utils.world_size[1] / 4
+        x, y = random.randint(-25, int(utils.world_size[0] / 4 + 25)), utils.world_size[1] / 4
         width = random.randint(0, 25)
         self.circles.append(self.Circle(radius, color, x, y, width))
 
